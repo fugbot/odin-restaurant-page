@@ -3,7 +3,9 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: {
-      index: './src/index.js',    
+      index: './src/index.js',
+      menu: './src/menu.js',
+      contact: './src/contact.js'    
    },
   plugins: [
       new HtmlWebpackPlugin({
