@@ -1,4 +1,5 @@
 const content = document.querySelector("#content");
+const menu = document.createElement("div");
 const title = document.createElement("h1");
 
 const soupDiv = document.createElement("div");
@@ -15,35 +16,42 @@ const cookieDiv = document.createElement("div");
 const chocoChip = document.createElement("div");
 const redVelvet = document.createElement("div");
 const gingerSnap = document.createElement("div");
+
 export default function showMenuContent() {
   content.innerHTML = "";
-  content.appendChild(title);
-  title.innerHTML += "Menu";
+  content.appendChild(menu);
+  menu.classList.add("menuContainer");
 
-  content.appendChild(soupDiv);
-  soupDiv.innerHTML += "SOUP";
+  menu.appendChild(title);
+  title.innerHTML = "Menu";
+
+  menu.appendChild(soupDiv);
+  soupDiv.innerHTML = "SOUP";
+  soupDiv.classList.add("soups", "food-item");
   soupDiv.appendChild(borscht);
-  borscht.innerHTML += "Borscht";
+  borscht.innerHTML = "Borscht";
   soupDiv.appendChild(chickenNoodle);
-  chickenNoodle.innerHTML += "Chicken Noodle";
+  chickenNoodle.innerHTML = "Chicken Noodle";
   soupDiv.appendChild(tomYum);
-  tomYum.innerHTML += "Tom Yum";
+  tomYum.innerHTML = "Tom Yum";
 
-  content.appendChild(mainCourseDiv);
-  mainCourseDiv.innerHTML += "MAINS";
+  menu.appendChild(mainCourseDiv);
+  mainCourseDiv.innerHTML = "MAINS";
+  mainCourseDiv.classList.add("mains", "food-item");
   mainCourseDiv.appendChild(spaghetti);
-  spaghetti.innerHTML += "Spaghetti";
+  spaghetti.innerHTML = "Spaghetti";
   mainCourseDiv.appendChild(salmon);
-  salmon.innerHTML += "Salmon";
+  salmon.innerHTML = "Salmon";
   mainCourseDiv.appendChild(dumplings);
-  dumplings.innerHTML += "dumplings";
+  dumplings.innerHTML = "dumplings";
 
-  content.appendChild(cookieDiv);
-  cookieDiv.innerHTML += "COOKIES";
+  menu.appendChild(cookieDiv);
+  cookieDiv.innerHTML = "COOKIES";
+  cookieDiv.classList.add("cookies", "food-item");
   cookieDiv.appendChild(chocoChip);
-  chocoChip.innerHTML += "Chocolate Chip";
+  chocoChip.innerHTML = "Chocolate Chip";
   cookieDiv.appendChild(redVelvet);
-  redVelvet.innerHTML += "Red Velvet";
+  redVelvet.innerHTML = "Red Velvet";
   cookieDiv.appendChild(gingerSnap);
-  gingerSnap.innerHTML += "Ginger Snap";
+  gingerSnap.innerHTML = "Ginger Snap";
 }
