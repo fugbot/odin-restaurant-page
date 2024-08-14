@@ -1,6 +1,9 @@
 /* *:hover {
   border: 2px red solid;
 } */
+ * {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ }
 
 header > h1 {
     text-align: center;
@@ -33,5 +36,10 @@ header > h1 {
   .contact {
     border: 2px black solid;
     margin: 1rem;
+    padding: 1rem;
   }
-  
+
+  .food-item {
+    margin: 1rem;
+    padding: 1rem;
+  }
