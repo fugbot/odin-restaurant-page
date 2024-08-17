@@ -8,6 +8,10 @@
 header > h1 {
     text-align: center;
   }
+
+#content {
+  margin-left: auto;
+}
   
   nav {
     display: flex;
